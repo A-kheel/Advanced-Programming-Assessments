@@ -33,22 +33,6 @@ def start():
             s["grade"] = "F"
     return students
 
-def results(marks):
-    cw = sum(marks["grade"])
-    exam = marks["exam"]
-    total = cw + exam
-    pct = (total / 160) * 100
-    if pct >= 70:
-        grade = "A"
-    elif pct >= 60:
-        grade = "B"
-    elif pct >= 50:
-        grade = "C"
-    elif pct >= 40:
-        grade = "D"
-    else:
-        grade = "F"
-    return grade
 
 def view_all():
     frame3text.delete(1.0, END)
